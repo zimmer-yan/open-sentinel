@@ -1,0 +1,105 @@
+
+# ==========================================
+# OpenSentinel - Laravel Git Ignore
+# ==========================================
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.testing.example
+
+# Laravel dependencies
+/vendor/
+
+# Node dependencies
+/node_modules/
+
+# Build artifacts
+/public/build/
+/public/hot
+/public/mix-manifest.json
+
+# Laravel framework cache and runtime files
+/bootstrap/cache/*.php
+/storage/*.key
+/storage/app/private/*
+/storage/app/public/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+
+# Keep required storage directories
+!/storage/app/private/.gitignore
+!/storage/app/public/.gitignore
+!/storage/framework/cache/.gitignore
+!/storage/framework/sessions/.gitignore
+!/storage/framework/views/.gitignore
+!/storage/logs/.gitignore
+
+# Laravel testing
+.phpunit.cache/
+.phpunit.result.cache
+/coverage/
+/build/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+.DS_Store
+
+# Operating systems
+Thumbs.db
+Desktop.ini
+
+# PHP tooling
+.php-cs-fixer.cache
+.phpactor.json
+.phpstorm.meta.php
+.phpstan/
+.psalm/
+
+# Composer
+/auth.json
+composer.phar
+
+# NPM / Yarn / PNPM
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.npm/
+.yarn/*
+!.yarn/patches/
+!.yarn/plugins/
+!.yarn/releases/
+!.yarn/versions/
+.pnpm-store/
+
+# Vite
+vite.config.*.timestamp-*
+
+# Docker / local development
+docker-compose.override.yml
+.env.docker
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.orig
+*.log
+
+# Sentry
+.sentryclirc
+sentry.properties
+
+# Local databases
+/database/*.sqlite
+/database/*.sqlite-*
+/database/*.db
